@@ -61,7 +61,7 @@ public class Main {
     }
 
     private static void printInConsole(ArrayList<Student> students) {
-        System.out.println("Исходный XML");
+        System.out.println("Исходный XML\n");
         students.forEach(student -> System.out.println(student.toString()));
         System.out.println();
     }
@@ -87,6 +87,7 @@ public class Main {
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             jaxbMarshaller.marshal(group, file);
+            System.out.println("результат после корректирования и последующего конвертированя объекта в Xml\n");
             jaxbMarshaller.marshal(group, System.out);
 
         } catch (JAXBException e) {

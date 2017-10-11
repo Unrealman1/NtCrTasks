@@ -1,0 +1,50 @@
+body {
+    background-color: lightblue;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+a {
+    color: coral;
+}
+
+a:hover {
+    color: darkslategrey;
+}
+
+input {
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 5px;
+    border: 2px solid #ccc;
+
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color: #333;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
